@@ -23,7 +23,7 @@ spring:
           predicates:
             - Path=/hr-service/**
           filters:
-            - CustomLoggingFilter
+            - AuthenticationFilter
         - id: JOB-SERVICE
           uri: lb://JOB-SERVICE
           predicates:
